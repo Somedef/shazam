@@ -763,13 +763,15 @@ input[id="menuicon"]:checked + label + div {
     border-radius: 50px;
 }
 
-.scroll i {
+.ball {
+    background: rgb(255, 255, 255, .5);
     display: block;
-    width: 13.5px;
-    height: 7px;
+    width: 8px;
+    height: 10px;
     margin: 0 auto;
-    margin-top: 3px;
+    margin-top: 5px;
     animation: roll 1.5s infinite;
+    border-radius: 20px;
 }
 
 @keyframes roll {
