@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="all and (max-width:500px)" href="css/m.css"> 
+    <link rel="stylesheet" media="all and (max-width:956px)" href="css/t.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Shazam</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="left">
+                <a href="#"><img src="img/메인로고.png" alt=""></a>
+                <ul class="menu">
+                    <li><a href="#" onclick="alert('로그인 후 이용 가능합니다.')">내 라이브러리</a></li>
+                    <li><a href="chart.html">차트</a></li>
+                    <li><a href="app.html">APP</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="searcharea">
+                    <input placeholder="음악 검색" type="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255, 0.4);"></i>
+                </div>
+                <a href="https://music.apple.com/kr/browse" target="_blank"><img src="img/애플뮤직.png" alt=""></a>
+                <div class="toggle">
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="sidebar">
+                        <div class="menu2">
+                            <a href="#" onclick="alert('로그인 후 이용 가능합니다.')">내 라이브러리</a>
+                            <a href="chart.html">차트</a>
+                            <a href="app.html">APP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 헤더 -->
+
+    <div class="main">
+        <video src="video/Major-Tom.mp4" muted autoplay loop>
+        </video>
+        <div class="text">
+            <h1>Shazam<br>Everywhere</h1>
+            <p>음악이 있는 곳 어디든</p>
+            <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><button onclick="">APP DOWNLOAD</button></a>
+        </div>
+    </div>
+    <!-- 메인비디오 -->
+
+    <section class="chrome">
+        <div class="inner">
+            <div class="left">
+                <a href="https://chrome.google.com/webstore/detail/shazam-identify-songs-fro/mmioliijnhnoblpgimnlajmefafdfilb" target="_blank" data-aos="slide-right" data-aos-duration="2200">
+                    <img src="img/크롬.png" alt="">
+                    <p>Chrome Extension</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <h2 data-aos="fade-right" data-aos-duration="2000">샤잠 브라우저 확장</h2>
+                <h3 data-aos="fade-right" data-aos-duration="1800">음악 가사 동영상 등을 발견하세요</h3>
+                <span data-aos="fade-right" data-aos-duration="1600">이 노래 뭐지?<br>
+                    넷플릭스 유튜브 사운드클라우드 트위치 스트리밍 영상에 나오는 노래가<br>
+                    뭔지 궁금한가요 샤잠 브라우저 확장 프로그램을 다운로드 해 설치한 후<br>
+                    클릭 한 번으로 음악을 검색하세요 아티스트 가사 동영상을 무료로 발견<br>
+                    하세요 샤잠은 매달 10억 곡의 노래를 찾아냅니다.
+                </span>
+            </div>
+            <div class="right">
+                <img src="img/익스텐션.png" alt="" data-aos="zoom-out" data-aos-duration="1800">
+            </div>
+        </div>
+    </section>
+    <!-- 익스텐션 -->
+
+    <section class="gbl">
+        <div class="inner">
+            <div class="title" data-aos="fade-left" data-aos-duration="1600">
+                <h2>지금 전 세계에서 검색하고 있는 인기 곡</h2>
+                <h3>전 세계에서 가장 많이 샤잠된 곡 목록에서 인기 아티스트를 확인하세요</h3>
+            </div>
+            <div class="gblchrt">
+                <p data-aos="fade-right" data-aos-duration="1600">글로벌 상위 200곡 차트</p>
+                <button onclick="" data-aos="zoom-out" data-aos-duration="1800" data-aos-easing="ease-in-out-quad"><i class="fa-solid fa-plus fa-xl fa-spin" style="color:#fff"></i></button>
+            </div>
+            <div class="rank" data-aos="fade-up" data-aos-duration="2000">
+                <div class="one" data-aos="zoom-in-up" data-aos-duration="1600">
+                    <div class="media">
+                        <p>1</p>
+                        <a href="#"><img src="img/앨범자켓벡터/another.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Unholy</a>
+                            <a href="#">Sam Smith & Kim Petras</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>2</p>
+                        <a href="#"><img src="img/앨범자켓벡터/calmdaown.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Calm Down</a>
+                            <a href="#">Rema</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>3</p>
+                        <a href="#"><img src="img/앨범자켓벡터/cough.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Cough (Odo)</a>
+                            <a href="#">EMPIRE & Kizz Daniel</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>4</p>
+                        <a href="#"><img src="img/앨범자켓벡터/cuff.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">CUFF IT</a>
+                            <a href="#">Beyonce</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>5</p>
+                        <a href="#"><img src="img/앨범자켓벡터/imgood.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">I’m Good (Blue)</a>
+                            <a href="#">David Guetta & Bebe Rexha</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two" data-aos="zoom-in-up" data-aos-duration="1800">
+                    <div class="media">
+                        <p>6</p>
+                        <a href="#"><img src="img/앨범자켓벡터/influ.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Under The Influence</a>
+                            <a href="#">Chris brown</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>7</p>
+                        <a href="#"><img src="img/앨범자켓벡터/kulosa.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">KU LO SA - A COLORS SHOW</a>
+                            <a href="#">Oxlade</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>8</p>
+                        <a href="#"><img src="img/앨범자켓벡터/missu.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Miss You</a>
+                            <a href="#">Oliver Tree & Robin Shulz</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <p>9</p>
+                        <a href="#"><img src="img/앨범자켓벡터/rush.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Rush</a>
+                            <a href="#">Ayra Starr</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <p>10</p>
+                        <a href="#"><img src="img/앨범자켓벡터/snap.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">SNAP</a>
+                            <a href="#">Rosa Linn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="three" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="media2">
+                        <p>11</p>
+                        <a href="#"><img src="img/앨범자켓벡터/star.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">STAR WALKIN</a>
+                            <a href="#">Lil Nas X</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <p>12</p>
+                        <a href="#"><img src="img/앨범자켓벡터/unholy.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">Unholy</a>
+                            <a href="#">Sam Smith & Kim Petras</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <p>13</p>
+                        <a href="#"><img src="img/앨범자켓벡터/worried.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">I Ain’t Worried</a>
+                            <a href="#">OneRepublic</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <p>14</p>
+                        <a href="#"><img src="img/앨범자켓벡터/worth.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">WORTH NOTHING</a>
+                            <a href="#">TWISTED</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <p>15</p>
+                        <a href="#"><img src="img/앨범자켓벡터/지리산.svg" alt=""></a>
+                        <div class="sng">
+                            <a href="#">지리산</a>
+                            <a href="#">진</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 차트 -->
+
+    <section class="slide" data-aos="fade-up" data-aos-duration="1600">
+        <h2>추천 인기 아티스트</h2>
+        <section class="notify-wrap">
+            <div class="notify-wrap-inner ellipsis">
+               <div class="notify-scroll">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/jazzinuf.png" alt="">
+                            <p>Jazzinnuf (재지너프)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/prep.png" alt="">
+                            <p>Prep (프렙)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/swv.png" alt="">
+                            <p>SWV</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/골드링크.png" alt="">
+                            <p>GOLDLINK (골드링크)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/나브.png" alt="">
+                            <p>NAV (내브)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/그웬.png" alt="">
+                            <p>Gwen Guthrie (그웬 거스리)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/미카.png" alt="">
+                            <p>Audrey mika (오드리 미카)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/베에린.png" alt="">
+                            <p>백예린</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/피지.png" alt="">
+                            <p>Fiji Blue (피지 블루)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/사카낙션.png" alt="">
+                            <p>Sakanaction (사카낙션)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/핑스.png" alt="">
+                            <p>Pink Sweat$ (핑크 스웨츠)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/카모.png" alt="">
+                            <p>CAMO (카모)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/팝.png" alt="">
+                            <p>Pop Smoke (팝 스모크)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/치즈.png" alt="">
+                            <p>치즈</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/코쿤.png" alt="">
+                            <p>CODE KUNST (코드 쿤스트)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/유라.png" alt="">
+                            <p>유라</p> 
+                        </a>
+                    </li>
+                </ul>  
+               </div>   
+            </div>
+        </section>
+        <section class="notify-wrap2">
+            <div class="notify-wrap-inner2 ellipsis2">
+               <div class="notify-scroll2">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/테일러.webp" alt="">
+                            <p>Taylor Swift (테일러 스위프트)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/크리스토퍼.webp" alt="">
+                            <p>Christopher (크리스토퍼)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/아이브.webp" alt="">
+                            <p>아이브</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/샘.webp" alt="">
+                            <p>Sam Smith (샘 스미스)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/케시.webp" alt="">
+                            <p>keshi (케시)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/아도이.webp" alt="">
+                            <p>ADOY</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/예나.webp" alt="">
+                            <p>최예나</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/사라.webp" alt="">
+                            <p>Sarah Kang</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/무라.webp" alt="">
+                            <p>Mura Masa (무라 마사)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/나연.webp" alt="">
+                            <p>나연</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/킴.webp" alt="">
+                            <p>Kim Petras (킴 페트라스)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/잔나비.webp" alt="">
+                            <p>잔나비</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/이지라이프.webp" alt="">
+                            <p>easy life (이지 라이프)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/아리.webp" alt="">
+                            <p>Ariana Grande</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/풀.webp" alt="">
+                            <p>Full Crate (풀 크레이트)</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/아티스트슬라이드/헤이즈.webp" alt="">
+                            <p>헤이즈</p> 
+                        </a>
+                    </li>
+                </ul>  
+               </div>   
+            </div>
+        </section>
+    </section>
+    <!-- 아티스트슬라이드 -->
+
+    <section class="city">
+        <div class="inner">
+            <div class="citytext">
+                <h2 data-aos="fade-right" data-aos-duration="1600">도시 별 TOP 25</h2>
+                <button onclick="" data-aos="zoom-out" data-aos-duration="1800"><i class="fa-solid fa-plus fa-xl fa-spin" style="color:#fff"></i></button>
+            </div>
+            <div class="box">
+                <div class="top" data-aos="fade-down" data-aos-duration="1600">
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/서울.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 로스앤젤레스</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/요하네스버그.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 요하네스버그</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/뉴욕.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 뉴욕</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/도쿄.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 도쿄</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                </div>
+                <div class="mid" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/런던.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 런던</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/방콕.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 방콕</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/베를린.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 베를린</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/베이징.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 베이징</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                </div>
+                <div class="bottom" data-aos="fade-down" data-aos-duration="2400">
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/la.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 서울</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/시드니.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 시드니</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/파리.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 파리</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="img/도시별2/토론토.png" alt=""></a>
+                        <a href="#">오늘의 TOP 25: 토론토</a>
+                        <a href="#">Apple Music</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 도시차트 -->
+
+    <section class="inquire">
+        <div class="inner">
+            <h2 data-aos="fade-up" data-aos-duration="1600">샤잠의 기술과<br>서비스에 대해 문의하세요.</h2>
+            <button onclick="" data-aos="slide-left" data-aos-duration="1600">문의하기</button>
+        </div>
+    </section>
+    <!-- 문의 -->
+
+    <footer>
+        <div class="inner">
+            <div class="top">
+                <div class="left">
+                    <select>
+                        <option selected="selected">한국어</option>
+                        <option>Čeština</option>
+                        <option>Deutsch</option>
+                        <option>Eλληνικά</option>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>Español (ES)</option>
+                        <option>Español (MX)</option>
+                        <option>Français</option>
+                        <option>हिन्दी</option>
+                        <option>인도네시아어</option>
+                        <option>Italiano</option>
+                        <option>日本語</option>
+                        <option>Nederlands</option>
+                        <option>Polski</option>
+                        <option>Português</option>
+                        <option>포르투갈어(브라질)</option>
+                        <option>Русский язык</option>
+                        <option>Türkçe</option>
+                        <option>中文</option>
+                        <option>繁體中文</option>
+                    </select>
+                    <div class="dwn">
+                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459" target="_blank"><img src="img/벡터/apple.svg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><img src="img/벡터/구글.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="first">
+                        <li>법적고지</li>
+                        <li><a href="#">개인정보 보호</a></li>
+                        <li><a href="#">데이터 관리</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                    <ul class="second">
+                        <li>회사 리소스</li>
+                        <li><a href="#">개발자용 Shazam Kit</a></li>
+                        <li><a href="#">Android 기기지원</a></li>
+                        <li><a href="#">Apple 기기지원</a></li>
+                        <li><a href="#">Shazam 소개</a></li>
+                        <li><a href="#">채용정보</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <img src="img/벡터/푸터로고.svg" alt="">
+                    <span>© Copyright 2022 Apple Inc. 및 자회사 | 공급업체의 의무</span>
+                </div>
+                <div class="right">
+                    <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i class="fa-brands fa-square-snapchat fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 -->
+
+    <div class="scroll">
+        <i class="fa-solid fa-angles-down" style="color: rgb(255,255,255,.4) ;"></i>
+    </div>
+    <!-- 스크롤볼 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- 스크립트 -->
+</body>
+
+</html>

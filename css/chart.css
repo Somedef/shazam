@@ -1,0 +1,675 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* outline: 1px solid black; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 1380px;
+    display: block;
+}
+
+section {
+    width: 100%;
+}
+
+
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+/* 세팅 */
+
+header {
+    width: 100%;
+    height: 90px;
+    padding-top: 22px;
+    background: transparent;
+    position: absolute;
+    z-index: 5;
+    border-bottom: 0.5px solid rgb(255, 255, 255, 0.4);
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.menu {
+    display: flex;
+}
+
+.menu {
+    margin-bottom: 7px;
+}
+
+.left {
+    align-items: center;
+}
+
+header .inner .left img {
+    margin-right: 50px;
+}
+
+.menu li a {
+    font-size: 1.125rem;
+    margin-right: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.right {
+    display: flex;
+}
+
+.right a img {
+    margin-left: 10px;
+}
+
+.searcharea {
+    border-radius: 8px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    background: rgb(204, 204, 204, .3);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255, 0.4);
+}
+/* 헤더 */
+
+.sec1 {
+    height: 1400px;
+    background: #000;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.sec1 .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sec1 .left img {
+    border-radius: 8px;
+    margin-right: 50px;
+}
+
+.sec1 .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.sec1 select {
+    width: 300px;
+    height: 65px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255, 0.15);
+    color: rgb(255, 255, 255, 0.8);
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+.sec1 select::-webkit-scrollbar,
+.sec1 .bottom .right::-webkit-scrollbar {
+    background: #000;
+    width: 15px;
+}
+
+.sec1 select::-webkit-scrollbar-thumb,
+.sec1 .bottom .right::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.sec1 select option {
+    color: #fff;
+    background-color: #000;
+}
+
+.sec1 select:focus {
+    outline: none;
+}
+
+.sec1 h2 {
+    font-size: 3.25rem;
+}
+
+.sec1 p {
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255, 0.65);
+}
+
+.sec1 select:hover {
+    border: none;
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.sec1 .top button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgba(23, 116, 255, 0.9);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    transition: 0.2s;
+    border: none;
+}
+
+.sec1 .top button:hover {
+    background: rgb(6, 106, 255, 0.7);
+}
+
+.sec1 .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 0.5px solid rgb(255, 255, 255, 0.4);
+    padding-top: 50px;
+}
+
+.sec1 .bottom .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media,
+.media2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.media:hover,
+.media2:hover {
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.media:hover span,
+.media2:hover span {
+    display: block;
+}
+
+.media2 p {
+    margin-right: 16px;
+    color: #fff;
+}
+
+.media p, .media2 p {
+    padding-left: 10px;
+}
+
+.media p,
+.media a img,
+.media2 a img {
+    margin-right: 25px;
+    color: #fff;
+}
+
+.media .list, .media2 .list {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sng {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sng a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.media p,
+.media a img {
+    margin-right: 25px;
+}
+
+.media span, .media2 span {
+    margin-right: 10px;
+    color: rgb(255, 255, 255, 0.7);
+    display: none;
+}
+
+.sng a:nth-child(2) {
+    color: rgb(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+.sng a:hover {
+    text-decoration: underline;
+}
+
+.sec1 .bottom button {
+    width: 300px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(255, 255, 255, 0.7);
+    transition: 0.2s;
+    border: none;
+}
+
+.sec1 .bottom button:hover {
+    color: #fff;
+}
+
+.sec1 .bottom .right {
+    overflow-y: scroll;
+    width: 600px;
+    height: 700px;
+}
+/* sec1 */
+
+
+footer {
+    height: 300px;
+    background: #000;
+}
+
+footer .inner {
+    border-top: 0.5px solid rgb(255, 255, 255, 0.4);
+}
+
+select {
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    font-weight: 700;
+    background: transparent;
+    color: rgb(255, 255, 255, 0.8);
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+
+select option {
+    color: #fff;
+    background: #000;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:hover {
+    border: 2px solid rgb(255, 255, 255, 0.85);
+    color: #fff;
+    background: rgb(255, 255, 255, 0.1);
+}
+
+footer {
+    height: 330px;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-bottom: 17px;
+    border-bottom: 0.5px solid rgb(255, 255, 255, 0.4);
+}
+
+footer .top .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.dwn a:first-child {
+    margin-right: 10px;
+}
+
+footer .right a {
+    color: #fff;
+    font-weight: 500;
+}
+
+footer .right {
+    color: rgb(255, 255, 255, 0.7);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.first li,
+.second li {
+    margin-bottom: 8px;
+}
+
+.second {
+    margin-left: 70px;
+}
+
+footer .bottom {
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom .left {
+    display: flex;
+    align-items: center;
+}
+
+footer .bottom .left span {
+    color: rgb(255, 255, 255, 0.6);
+    margin-left: 40px;
+}
+
+footer .bottom .right {
+    margin: 0;
+}
+
+footer .bottom .right a:nth-child(-n+3) {
+    margin-right: 25px;
+}
+
+footer select::-webkit-scrollbar {
+    background: #000;
+    width: 10px;
+}
+
+footer select::-webkit-scrollbar-thumb
+ {
+    background: rgb(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+/* 푸터 */
+
+#menuicon {display: none;}
+#menuicon + label {display: block; margin: 30px; width: 30px; height: 25px; position: relative; cursor: pointer;}  
+#menuicon + label span {display: block; position: absolute; width: 100%; height: 5px; border-radius: 30px; background: rgb(255, 255, 255, .8); transition: all .35s;}
+#menuicon + label span:nth-child(1) {top: 0;}    
+#menuicon + label span:nth-child(2) {top: 50%; transform: translateY(-50%);}
+#menuicon + label span:nth-child(3) {bottom: 0;}
+#menuicon:checked + label {z-index: 2;}
+#menuicon:checked + label span {background: rgb(255, 255, 255, .8);}
+#menuicon:checked + label span:nth-child(1) {top: 50%; transform: translateY(-50%) rotate(45deg);}
+#menuicon:checked + label span:nth-child(2) {opacity: 0;}
+#menuicon:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background: rgb(0, 0, 0, .85);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked + label + div {
+    right: 0;
+}
+
+.menu2 {
+    /* outline: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 100px;
+    text-align: center;
+    gap: 15px;
+}
+
+.menu2 a {
+    color: rgb(255, 255, 255, .8);
+}
+
+.toggle {
+    display: none;
+    position: relative;
+    right: -30%;
+}
+/* 토글 */
+
+
+.swiper-container {
+    width: 500px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+/* 장르 버튼 슬라이드 */
+
+@media all and (max-width:500px) {
+    * {
+        word-break: keep-all;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        min-width: auto;
+    }
+
+    .inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+    /* 세팅 */
+
+    .dwn {
+    display: flex;
+    }
+
+    footer {
+        padding-top: 20px;
+        height: auto;
+    }
+
+    footer .inner {
+        border-top: 0;
+    }
+
+    footer .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .top .left {
+        align-items: center;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .bottom .left {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* 푸터 */
+}
+/* 모바일 */
+
+
+@media all and (max-width:956px) {
+
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        min-width: auto;
+    }
+
+    .swiper-container {
+        width: 315px;
+    }
+
+    section,
+    header,
+    .swiper-wrapper,
+    .inner,
+    .sec1 .bottom .right {
+        width: 100%;
+    }
+
+    .inner {
+        padding: 0 30px;
+    }
+
+    .menu,
+    header .right .searcharea,
+    header .right a img,
+    .sec1 .bottom .left {
+        display: none;
+    }
+    /* 세팅 */
+
+
+    header {
+        padding-top: 5px;
+    }
+
+    .toggle {
+        display: block;
+    }
+    /* 헤더 */
+
+    .sec1 {
+        height: auto;
+        padding-bottom: 80px;
+    } 
+
+    .sec1 .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 20px;
+    }
+
+    .sec1 .top .left {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sec1 .info {
+        align-items: center;
+    }
+
+    .sec1 .top .left img {
+        margin: 0;
+    }
+
+    .sec1 .top button {
+        width: 80px;
+        height: 40px;
+    }
+    /* sec1 */
+
+    footer {
+        padding-top: 20px;
+        height: auto;
+    }
+
+    footer .inner {
+        padding-top: 50px;
+    }
+    
+    footer .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .top .left {
+        align-items: center;
+    }
+    
+    footer .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    footer .bottom .left {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* 푸터 */
+
+}
+/* 태블릿 */
+
+@media all and (min-width: 957px) and (max-width: 1379px) {
+    body {
+        min-width: auto;
+    }
+
+    .inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+/* 태블릿까지 */
+

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+
+@media all and (max-width: 956px) {
+
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        min-width: auto;
+    }
+
+    .inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .menu,
+    header .right .searcharea,
+    header .right a img, 
+    .chrome span,
+    .main p,
+    .scroll {
+        display: none;
+    }
+    /* 세팅 */
+
+    header {
+        padding-top: 5px;
+    }
+
+    .toggle {
+        display: block;
+    }
+    /* 헤더 */
+
+    .main .text {
+        top: 60%;
+    }
+
+    .main .text h1 {
+        font-size: 4rem;
+    }
+
+    .main .text button {
+        font-size: 0.75rem;
+        width: 130px;
+        height: 45px;
+        margin-top: 10px;
+    }
+    /* 메인 */
+
+    .chrome {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .chrome .inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .chrome .left {
+        align-items: center;
+    }
+
+    .chrome .right img {
+        width: 440px;
+    }
+    /* 익스텐션 */
+
+    .title {
+        text-align: center;
+    }
+
+    .rank {
+        overflow-x: scroll;
+    }
+
+    .one .media:last-child,
+    .two .media2:last-child,
+    .three .media2:last-child {
+        margin-bottom: 20px;
+        border: none;
+    }
+    /* 글로벌차트 */
+
+    .slide h2 {
+        width: 100%;
+    }
+    /* 아티스트슬라이드 */
+
+    .city {
+        height: auto;
+    }
+
+    .gblchrt,
+    .citytext {
+        justify-content: center;
+    }
+
+    .gbl button,
+    .citytext button {
+        position: absolute;
+        right: 3%;
+    }
+
+    .box {
+        overflow-x: scroll;
+        display: flex;
+        gap: 50px;
+    }
+
+    .box::-webkit-scrollbar, .rank::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .box::-webkit-scrollbar-thumb, .rank::-webkit-scrollbar-thumb {
+        background: #217af4;
+        border-radius: 8px;
+    }
+
+    .box::-webkit-scrollbar-track, .rank::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 8px;
+    }
+
+    .box > * {
+        gap: 50px;
+    }
+    /* 글로벌차트,도시별차트 */
+
+    .inquire {
+        background-image: none;
+    }
+
+    .inquire .inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inquire .inner h2 {
+        text-align: center;
+    }
+    /* 문의 */
+
+    footer {
+        padding-top: 20px;
+        height: auto;
+    }
+    
+    footer .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .top .left {
+        align-items: center;
+    }
+    
+    footer .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    footer .bottom .left {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* 푸터 */
+}
