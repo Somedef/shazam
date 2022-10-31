@@ -780,3 +780,66 @@ input[id="menuicon"]:checked + label + div {
     }
 }
 /* 스크롤볼 */
+
+
+.marquee a,
+.marquee2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: rgb(0, 0, 0, .6);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.marquee img,
+.marquee2 img {
+    border-radius: 50%;
+}
+
+.marquee,
+.marquee2 {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    margin-top: 30px;
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 50s linear infinite alternate;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  .marquee__content2 {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll2 50s linear infinite alternate-reverse;
+  }
+
+  @keyframes scroll2 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
