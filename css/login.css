@@ -276,6 +276,7 @@ footer select::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #f8f8f8;
 }
 
 .login-form h1 {
