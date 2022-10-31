@@ -73,8 +73,11 @@
     }
     /* 문의 */
 
+
+
     .dwn {
     display: flex;
+    flex-direction: column;
     }
     /* 푸터 */
 

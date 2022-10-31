@@ -435,6 +435,7 @@ footer select::-webkit-scrollbar-thumb {
 
     .dwn {
     display: flex;
+    flex-direction: column;
     }
 
     footer {

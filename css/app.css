@@ -412,6 +412,7 @@ input[id="menuicon"]:checked + label + div {
 
     .dwn {
     display: flex;
+    flex-direction: column;
     }
 
     footer {
