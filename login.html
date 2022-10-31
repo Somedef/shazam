@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="assets/favicon.ico">
-    <title>app</title>
+    <title>Login</title>
 </head>
-
 <body>
     <header>
         <div class="inner">
             <div class="left">
-                <a href="index.html"><img src="img/벡터/로고블랙.png" alt=""></a>
+                <a href="index.html"><img src="img/로고블랙.png" alt=""></a>
                 <ul class="menu">
                     <li><a href="login.html">내 라이브러리</a></li>
                     <li><a href="chart.html">차트</a></li>
@@ -42,7 +39,7 @@
                     </label>
                     <div class="sidebar">
                         <div class="menu2">
-                            <a href="login.html">내 라이브러리</a>
+                            <a href="#" onclick="alert('로그인 후 이용 가능합니다.')">내 라이브러리</a>
                             <a href="chart.html">차트</a>
                             <a href="app.html">APP</a>
                         </div>
@@ -53,45 +50,29 @@
     </header>
     <!-- 헤더 -->
 
-    <section class="slide">
-        <div class="inner">
-            <h1>앱 다운로드</h1>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w.webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(1).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(2).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(3).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(8).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(9).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(10).webp" alt=""></div>
-                    <div class="swiper-slide"><img src="img/앱페이지/230x0w(11).webp" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
+    <section class="login-form">
+        <a href="">
+            <i class="fa-brands fa-apple fa-xl" style="color: #fff;"></i>
+            <p>Apple로 로그인</p>
+        </a>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">이메일</label>
             </div>
-            <div class="text">
-                <h2>샤잠 앱으로 곡을 확인하고 감상하고 발견해 보세요</h2>
-                <p>
-                    음악과 동기화된 가사를 따라 불러 보세요.<br>
-                    애플뮤직 또는 유튜브에서 좋아하는 뮤직 비디오를 감상하세요.<br>
-                    발견한 곡을 감상하고 애플뮤직 또는 스포티파이 재생 목록에 추가하세요.
-                </p>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">비밀번호</label>
             </div>
-            <div class="qr">
-                <img src="img/앱페이지/qr-apps.png" alt="">
-                <div class="text2">
-                    <h2>앱을 다운로드하세요</h2>
-                    <p>코드를 스캔하여 무료로 다운로드하세요</p>
-                    <div class="use">
-                        <span>이용가능</span>
-                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459" target="_blank"><i class="fa-brands fa-app-store-ios fa-2xl"></i></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><i class="fa-brands fa-google-play fa-2xl"></i></a>
-                    </div>
-                </div>
+            <div class="btn-area">
+                <button type="submit" id="btn">로그인</button>
             </div>
-        </div>
+            <div class="caption">
+                <a href="">암호를 잊으셨습니까?</a>
+                <a href="">계정이 없으신가요?<span>Shazam 앱으로 가입하기</span></a>
+            </div>
+        </form>
     </section>
-    <!-- 슬라이드 -->
 
     <footer>
         <div class="inner">
@@ -128,17 +109,17 @@
                 <div class="right">
                     <ul class="first">
                         <li>법적고지</li>
-                        <li><a href="">개인정보 보호</a></li>
-                        <li><a href="">데이터 관리</a></li>
-                        <li><a href="">이용약관</a></li>
+                        <li><a href="#">개인정보 보호</a></li>
+                        <li><a href="#">데이터 관리</a></li>
+                        <li><a href="#">이용약관</a></li>
                     </ul>
                     <ul class="second">
                         <li>회사 리소스</li>
-                        <li><a href="">개발자용 Shazam Kit</a></li>
-                        <li><a href="">Android 기기지원</a></li>
-                        <li><a href="">Apple 기기지원</a></li>
-                        <li><a href="">Shazam 소개</a></li>
-                        <li><a href="">채용정보</a></li>
+                        <li><a href="#">개발자용 Shazam Kit</a></li>
+                        <li><a href="#">Android 기기지원</a></li>
+                        <li><a href="#">Apple 기기지원</a></li>
+                        <li><a href="#">Shazam 소개</a></li>
+                        <li><a href="#">채용정보</a></li>
                     </ul>
                 </div>
             </div>
@@ -151,53 +132,34 @@
                     <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
                     <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
                     <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i class="fa-brands fa-square-snapchat fa-2xl"
-                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i class="fa-brands fa-square-snapchat fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- 푸터 -->
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                
-                500: {
-                    slidesPerView: 1,
-                    spaceBetween: 50,
-                },
-                700: {
-                    slidesPerView: 3,
-                },
-                957: {
-                    slidesPerView: 4,
-                },
-                1380: {
-                    slidesPerView: 5,
-                }
-            }
-        });
-    </script>
-</body>
+        let = $('#id');
+        let = $('#pw');
+        let = $('#btn');
 
+        $(btn).on('click', function(){
+            if($(id).val() =="") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function(){
+                    $('label').removeClass('warning');
+                },1500);
+            }
+            else if($(pw).val() =="") {
+                $(pw).next('label').addClass('warning');
+                setTimeout(function(){
+                    $('label').removeClass('warning');
+                },1500);
+            }
+        })
+    </script>
+
+</body>
 </html>
