@@ -230,6 +230,7 @@ input::placeholder {
 .gbl {
     height: 1235px;
     padding-top: 135PX;
+    background: #fff;
 }
 
 .title {
@@ -326,9 +327,6 @@ input::placeholder {
 }
 /* 글로벌200차트 */
 
-.slide {
-    height: 360px;
-}
 
 .slide h2 {
     width: 1300px;
@@ -363,6 +361,8 @@ input::placeholder {
     gap: var(--gap);
     margin-top: 30px;
   }
+
+  
   
   .marquee__content {
     flex-shrink: 0;
@@ -406,7 +406,7 @@ input::placeholder {
 .city {
     height: 1405px;
     padding-top: 105px;
-    margin-top: 300px;
+    background: #fff;
 }
 
 .citytext {
@@ -760,3 +760,4 @@ input[id="menuicon"]:checked + label + div {
     }
 }
 /* 스크롤볼 */
+
