@@ -77,6 +77,7 @@
                     <img src="img/크롬.png" alt="">
                     <p>Chrome Extension</p>
                     <i class="fa-solid fa-angle-right"></i>
+                    <i class="fa-solid fa-angle-right"></i>
                 </a>
                 <h2 data-aos="fade-right" data-aos-duration="2000">샤잠 브라우저 확장</h2>
                 <h3 data-aos="fade-right" data-aos-duration="1800">음악 가사 동영상 등을 발견하세요</h3>
@@ -661,6 +662,16 @@
             $('html, body').animate({ scrollTop: 0 }, 400);
             return false;
         });
+        // 탑버튼
+
+        $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('header').addClass('active');
+                }else{
+                    $('header').removeClass('active');
+                }
+            });
+            // 헤더
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- 스크립트 -->
