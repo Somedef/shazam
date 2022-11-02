@@ -54,6 +54,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="go-top">
+                <i class="fa-solid fa-angle-up fa-bounce" style="color: #fff;"></i>
+            </a>
         </div>
     </header>
     <!-- 헤더 -->
@@ -634,9 +637,7 @@
     </footer>
     <!-- 푸터 -->
 
-    <a href="#" class="go-top">
-        <i class="fa-solid fa-angle-up fa-bounce" style="color: #fff;"></i>
-    </a>
+    
     <!-- 탑버튼 -->
 
     <div class="scroll">
@@ -652,7 +653,7 @@
         AOS.init();
 
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 1000) {
+            if ($(this).scrollTop() > 0) {
                 $('.go-top').fadeIn();
             } else {
                 $('.go-top').fadeOut();

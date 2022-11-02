@@ -21,7 +21,9 @@
     header .right a img, 
     .chrome span,
     .main p,
-    .scroll {
+    .scroll,
+    header.active,
+    .chrome a i:last-child {
         display: none;
     }
     /* 세팅 */
@@ -67,6 +69,11 @@
 
     .chrome .right img {
         width: 440px;
+    }
+
+    .chrome a img,
+    .chrome a i:nth-child(n) {
+        animation: none;
     }
     /* 익스텐션 */
 
