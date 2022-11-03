@@ -889,5 +889,3 @@ input[id="menuicon"]:checked + label + div {
         transform: rotate(360deg);
     }
 }
-
-
