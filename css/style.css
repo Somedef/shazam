@@ -16,20 +16,17 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: overlay;
+    border:1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
     width: 15px;
   }
-  html::-webkit-scrollbar-track {
-    background: transparent;
-    box-shadow: inset 0 0 4px rgb(0, 0, 0, .15);
-  }
+  
   html::-webkit-scrollbar-thumb {
-    background: rgb(166, 215, 133, .65);
-    background-clip: padding-box;
-    border: 3px solid transparent;
-    border-radius: 8px;
+    background-color: hsla(0, 0%, 42%, 0.29);
+    border-radius: 100px;
   }
 
 body {
