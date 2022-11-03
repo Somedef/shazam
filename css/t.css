@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-@media all and (max-width: 956px) {
+
 
     html {
         font-size: 14px;
@@ -176,4 +176,3 @@
         gap: 20px;
     }
     /* 푸터 */
-}
