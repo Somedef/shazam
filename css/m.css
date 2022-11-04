@@ -1,83 +1,80 @@
 @charset "UTF-8";
 
+html {
+    font-size: 12px;
+}
 
+body {
+    min-width: auto;
+}
 
-    html {
-        font-size: 12px;
-    }
-    
-    body {
-        min-width: auto;
-    }
+.inner {
+    width: 100%;
+    padding: 0 30px;
+}
 
-    .inner {
-        width: 100%;
-        padding: 0 30px;
-    }
+.slide,
+.main,
+.chrome .right img,
+.title h2,
+.title h3,
+.scroll {
+    display: none;
+}
+/* 세팅 */
 
-    .slide,
-    .main,
-    .chrome .right img,
-    .title h2, 
-    .title h3,
-    .scroll {
-        display: none;
-    }
-    /* 세팅 */
+header {
+    background: #000;
+    position: static;
+}
+/* 헤더 */
 
-    header {
-        background: #000;
-        position: static;
-    }
-    /* 헤더 */
+.chrome {
+    padding-bottom: 20px;
+}
 
-    .chrome {
-        padding-bottom: 20px;
-    }
+.chrome a {
+    padding: 12px 30px;
+    gap: 6px;
+}
 
-    .chrome a {
-        padding: 12px 30px;
-        gap: 6px;
-    }
+.chrome h2, .chrome h3 {
+    text-align: center;
+}
 
-    .chrome h2, .chrome h3 {
-        text-align: center;
-    }
+.chrome h2 {
+    margin-top: 10px;
+}
+/* 익스텐션 */
 
-    .chrome h2 {
-        margin-top: 10px;
-    }
-    /* 익스텐션 */
+.gbl {
+    height: auto;
+    padding-top: 0;
+}
 
-    .gbl {
-        height: auto;
-        padding-top: 0;
-    }
+.gblchrt {
+    margin-top: 50px;
+}
 
-    .gblchrt {
-        margin-top: 50px;
-    }
+.rank {
+    margin-top: 20px;
+}
+/* 글로벌차트 */
 
-    .rank {
-        margin-top: 20px;
-    }
-    /* 글로벌차트 */
+.city {
+    margin-top: 0;
+}
+/* 도시별차트 */
 
-    .city {
-        margin-top: 0;
-    }
-    /* 도시별차트 */
-
-    .inquire {
-        padding-top: 80px;
-    }
-    /* 문의 */
+.inquire {
+    padding-top: 80px;
+}
+/* 문의 */
 
 
 
-    .dwn {
+.dwn {
     display: flex;
     flex-direction: column;
-    }
-    /* 푸터 */
-
+}
+/* 푸터 */

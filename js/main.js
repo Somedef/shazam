@@ -20,7 +20,7 @@ $(window).on('scroll', function () {
         $('header').removeClass('active');
     }
 });
-            // 헤더
+// 헤더
 
 
 
