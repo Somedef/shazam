@@ -2,6 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@keyframes x {
+    0% {background-position: 0px 0px}
+    50% {background-position: 0px 800px}
+    100% {background-position: 0px 0px}
+} 
+/* body bg */
+
+@keyframes scroll {
+    from {transform: translateX(0);}
+    to {transform: translateX(calc(-100% - var(--gap)));}
+}
+
+@keyframes scroll2 {
+    from {transform: translateX(0);}
+    to {transform: translateX(calc(-100% - var(--gap)));}
+}
+/* slide alternate */
+
+@keyframes roll {
+    100% {transform: translate(0, 25px); opacity: 0;}
+    0% {transform: translate(0, 0px); opacity: 1;}
+}
+/* scroll ball */
+
+@keyframes right2 {
+    from {transform: translateX(-5px); opacity: 1;}
+    to {transform: translateX(0); opacity: 0;}
+}
+
+@keyframes right {
+    from {transform: translateX(0); opacity: 0;}
+    to {transform: translateX(5px); opacity: 1;}
+}
+/* extension angle */
+
+@keyframes rotate {
+    from {transform: rotate(360deg);}
+}
+/* extension logo */
+/* keyframes */
 
 * {
     padding: 0;
@@ -13,21 +53,23 @@
     font-family: 'Noto Sans KR', sans-serif;
     /* outline: 1px solid black; */
 }
+/* reset */
 
 html {
     scroll-behavior: smooth;
     overflow: overlay;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  html::-webkit-scrollbar-thumb {
+}
+
+html::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 42%, 0.29);
     border-radius: 100px;
-  }
+}
+/* 스크롤바 커스텀 */
 
 body {
     min-width: 1380px;
@@ -39,13 +81,6 @@ body {
     animation: x 15s ease infinite alternate;
 }
 
-@keyframes x {
-    0% {background-position: 0px 0px}
-    50% {background-position: 0px 800px}
-    100% {background-position: 0px 0px}
-}
-
-
 section,
 video {
     width: 100%;
@@ -55,24 +90,23 @@ video {
     width: 1300px;
     margin: 0 auto;
 }
-/* set */
 
-header.active{
-    background:rgba(255,255,255);
+header.active {
+    background: rgba(255, 255, 255);
     box-shadow: 0 2px 2px rgb(0, 0, 0, .15);
 }
 
 header.active .inner .logo,
 header.active .inner ul {
-    transition:.5s;
+    transition: .5s;
 }
 
 header.active .inner ul li a {
-    color:#000;
+    color: #000;
     font-weight: 700;
 }
 
-header.active  .inner .logo img {
+header.active .inner .logo img {
     display: none;
 }
 
@@ -226,6 +260,7 @@ input::placeholder {
     background: rgb(255, 255, 255, 0.9);
     color: #000;
     font-weight: 700;
+    border: none;
 }
 /* 메인 */
 
@@ -265,6 +300,19 @@ input::placeholder {
 
 .chrome a i {
     margin-top: 3px;
+}
+
+.chrome a i {
+    animation: right 2s linear infinite;
+}
+
+.chrome a i:last-child {
+    animation: right2 2s ease infinite;
+    margin-left: -10px;
+}
+
+.chrome a img {
+    animation: rotate 2s ease infinite;
 }
 
 .chrome h2 {
@@ -428,48 +476,26 @@ input::placeholder {
     user-select: none;
     gap: var(--gap);
     margin-top: 30px;
-  }
+}
 
-  
-  
-  .marquee__content {
+.marquee__content {
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
     min-width: 100%;
     gap: var(--gap);
     animation: scroll 50s linear infinite alternate;
-  }
+}
 
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - var(--gap)));
-    }
-  }
-
-  .marquee__content2 {
+.marquee__content2 {
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
     min-width: 100%;
     gap: var(--gap);
     animation: scroll2 50s linear infinite alternate-reverse;
-  }
-
-  @keyframes scroll2 {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - var(--gap)));
-    }
-  }
-  /* 슬라이드 */
-
-
+}
+/* 슬라이드 */
 
 .city {
     height: 1405px;
@@ -665,16 +691,122 @@ footer select::-webkit-scrollbar-thumb {
 
 .go-top {
     display: none;
-	position:fixed;
-	outline:none;
-	background-color:#A6d785;
-	cursor:pointer;
-	padding:10px 15px;
-	border-radius:100%;
+    position: fixed;
+    outline: none;
+    background-color: #A6d785;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100%;
     bottom: 30px;
     right: 40px;
     box-shadow: 0 -2px 10px rgb(0, 0, 0, .15);
 }
+/* 탑버튼 */
+
+#menuicon {
+    display: none;
+}
+#menuicon + label {
+    display: block;
+    margin: 30px;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+#menuicon + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255, .8);
+    transition: all .35s;
+}
+#menuicon + label span:nth-child(1) {
+    top: 0;
+}
+#menuicon + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+#menuicon + label span:nth-child(3) {
+    bottom: 0;
+}
+#menuicon:checked + label {
+    z-index: 2;
+}
+#menuicon:checked + label span {
+    background: rgb(255, 255, 255, .8);
+}
+#menuicon:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background: rgb(0, 0, 0, .85);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked + label + div {
+    right: 0;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 100px;
+    text-align: center;
+    gap: 15px;
+}
+
+.menu2 a {
+    color: rgb(255, 255, 255, .8);
+}
+
+.toggle {
+    display: none;
+    position: relative;
+    right: -30%;
+}
+/* 토글 */
+
+.scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 49.3%;
+    width: 30px;
+    height: 47px;
+    border: solid rgb(255, 255, 255, .5) 2px;
+    border-radius: 50px;
+}
+
+.ball {
+    background: rgb(255, 255, 255, .5);
+    display: block;
+    width: 8px;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    animation: roll 1.5s infinite;
+    border-radius: 20px;
+}
+/* 스크롤볼 */
 
 
 
@@ -752,123 +884,3 @@ footer select::-webkit-scrollbar-thumb {
 }
 /* 태블릿까지 */
 
-#menuicon {display: none;}
-#menuicon + label {display: block; margin: 30px; width: 30px; height: 25px; position: relative; cursor: pointer;}  
-#menuicon + label span {display: block; position: absolute; width: 100%; height: 5px; border-radius: 30px; background: rgb(255, 255, 255, .8); transition: all .35s;}
-#menuicon + label span:nth-child(1) {top: 0;}    
-#menuicon + label span:nth-child(2) {top: 50%; transform: translateY(-50%);}
-#menuicon + label span:nth-child(3) {bottom: 0;}
-#menuicon:checked + label {z-index: 2;}
-#menuicon:checked + label span {background: rgb(255, 255, 255, .8);}
-#menuicon:checked + label span:nth-child(1) {top: 50%; transform: translateY(-50%) rotate(45deg);}
-#menuicon:checked + label span:nth-child(2) {opacity: 0;}
-#menuicon:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
-
-.sidebar {
-    width: 300px;
-    height: 100%;
-    background: rgb(0, 0, 0, .85);
-    position: fixed;
-    top: 0;
-    right: -300px;
-    z-index: 1;
-    transition: all .35s;
-}
-
-input[id="menuicon"]:checked + label + div {
-    right: 0;
-}
-
-.menu2 {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin-top: 100px;
-    text-align: center;
-    gap: 15px;
-}
-
-.menu2 a {
-    color: rgb(255, 255, 255, .8);
-}
-
-.toggle {
-    display: none;
-    position: relative;
-    right: -30%;
-}
-/* 토글 */
-
-.scroll {
-    position: absolute;
-    bottom: 3%;
-    left: 49.3%;
-    width: 30px;
-    height: 47px;
-    border: solid rgb(255, 255, 255, .5) 2px;
-    border-radius: 50px;
-}
-
-.ball {
-    background: rgb(255, 255, 255, .5);
-    display: block;
-    width: 8px;
-    height: 10px;
-    margin: 0 auto;
-    margin-top: 5px;
-    animation: roll 1.5s infinite;
-    border-radius: 20px;
-}
-
-@keyframes roll {
-    100% {
-        transform: translate(0, 25px);
-        opacity: 0;
-    }
-    0% {
-        transform: translate(0, 0px);
-        opacity: 1;
-    }
-}
-/* 스크롤볼 */
-
-.chrome a i {
-    animation: right 2s linear infinite;
-}
-
-@keyframes right {
-    from {
-        transform: translateX(0);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(5px);
-        opacity: 1;
-    }
-}
-
-.chrome a i:last-child {
-    animation: right2 2s ease infinite;
-    margin-left: -10px;
-}
-
-@keyframes right2 {
-    from {
-        transform: translateX(-5px);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 0;
-    }
-}
-
-.chrome a img {
-    animation: rotate 2s ease infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(360deg);
-    }
-}
