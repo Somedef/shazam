@@ -14,7 +14,7 @@ $('.go-top').click(function () {
 // 탑버튼
 
 $(window).on('scroll', function () {
-    if ($(window).scrollTop()) {
+    if ($(window).scrollTop() > 200) {
         $('header').addClass('active');
     } else {
         $('header').removeClass('active');

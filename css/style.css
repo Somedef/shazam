@@ -91,6 +91,33 @@ video {
     margin: 0 auto;
 }
 
+header:hover {
+    background: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+header:hover .logo {
+    background: url(../img/로고블랙.png);
+}
+
+header:hover .menu a {
+    color: #000;
+    font-weight: 700;
+}
+
+header:hover .searcharea {
+    background: rgb(204, 204, 204, .6);
+}
+
+header:hover input {
+    color: #000;
+}
+
+header:hover input::placeholder {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+
 header.active {
     background: rgba(255, 255, 255);
     box-shadow: 0 2px 2px rgb(0, 0, 0, .15);
@@ -140,7 +167,7 @@ header {
     background: transparent;
     position: fixed;
     z-index: 5;
-    transition: .3s ease;
+    transition: .5s ease;
     top: 0;
 }
 
