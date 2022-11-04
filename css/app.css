@@ -23,6 +23,21 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow: overlay;
+    border: 1px solid #ddd;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 42%, 0.29);
+    border-radius: 100px;
+}
+
 body {
     min-width: 1380px;
     display: block;
