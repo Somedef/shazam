@@ -25,21 +25,30 @@ body {
 
 header {
     background: #000;
-    position: static;
 }
+
+header:hover {
+    background: blue;
+}
+
+
 /* 헤더 */
 
 .chrome {
     padding-bottom: 20px;
+    margin-top: 90px;
 }
 
 .chrome a {
     padding: 12px 30px;
     gap: 6px;
+    box-shadow: none;
+    border: 1px solid rgb(0, 0, 0, .1);
 }
 
 .chrome h2, .chrome h3 {
     text-align: center;
+    text-shadow: none;
 }
 
 .chrome h2 {
@@ -49,7 +58,7 @@ header {
 
 .gbl {
     height: auto;
-    padding-top: 0;
+    padding-top: 40px;
 }
 
 .gblchrt {
@@ -69,12 +78,37 @@ header {
 .inquire {
     padding-top: 80px;
 }
+
+.inquire h2 {
+    text-shadow: none;
+}
+
+.inquire button {
+    box-shadow: none;
+}
 /* 문의 */
 
-
+.go-top {
+    box-shadow: none;
+    right: 25px;
+    bottom: 25px;
+}
+/* 탑버튼 */
 
 .dwn {
     display: flex;
     flex-direction: column;
 }
+
+footer .bottom {
+    justify-content: space-around;
+}
+
+footer .bottom img {
+    display: none;
+}
 /* 푸터 */
+
+select {
+    margin-right: 9px;
+}

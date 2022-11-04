@@ -57,12 +57,11 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: overlay;
     border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -630,6 +629,7 @@ select {
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
+    appearance: none;
 }
 
 select option {
@@ -920,3 +920,7 @@ input[id="menuicon"]:checked + label + div {
     }
 }
 /* 태블릿까지 */
+
+.marquee a img:last-child {
+    
+}

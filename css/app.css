@@ -25,12 +25,11 @@ html {
 
 html {
     scroll-behavior: smooth;
-    overflow: overlay;
     border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -233,6 +232,8 @@ footer .inner {
     border-top: 0.5px solid rgb(255, 255, 255, 0.4);
 }
 
+
+
 select {
     width: 180px;
     height: 40px;
@@ -244,6 +245,7 @@ select {
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
+    appearance: none;
 }
 
 
@@ -450,12 +452,19 @@ input[id="menuicon"]:checked + label + div {
 
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        justify-content: space-around;
     }
 
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    footer .bottom img {
+        display: none;
+    }
+
+    select {
+        margin-right: 9px;
     }
 }
 
@@ -533,12 +542,19 @@ input[id="menuicon"]:checked + label + div {
 
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        height: 150px;
+    }
+
+    footer .bottom img {
+        margin-bottom: 10px;
     }
 
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    footer .bottom .right {
+        margin-bottom: 12px;
     }
 }
 

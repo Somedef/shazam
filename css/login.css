@@ -19,12 +19,11 @@ html {
 
 html {
     scroll-behavior: smooth;
-    overflow: overlay;
     border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -176,6 +175,10 @@ input[id="menuicon"]:checked + label + div {
 footer {
     height: 330px;
     background: #000;
+}
+
+select {
+    appearance: none;
 }
 
 select {
@@ -487,13 +490,18 @@ footer select::-webkit-scrollbar-thumb {
 
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        justify-content: space-around;
     }
 
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
     }
+    
+    footer .bottom img {
+        display: none;
+    }
+
+    
 }
 
 /* 태블릿 */
@@ -554,12 +562,19 @@ footer select::-webkit-scrollbar-thumb {
 
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        height: 150px;
+    }
+
+    footer .bottom img {
+        margin-bottom: 10px;
     }
 
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    footer .bottom .right {
+        margin-bottom: 12px;
     }
 }
 

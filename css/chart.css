@@ -19,17 +19,20 @@ html {
 
 html {
     scroll-behavior: smooth;
-    overflow: overlay;
     border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 html::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 42%, 0.8);
     border-radius: 100px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #000;
 }
 
 body {
@@ -352,6 +355,7 @@ select {
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
+    appearance: none;
 }
 
 
@@ -557,14 +561,21 @@ input[id="menuicon"]:checked + label + div {
 
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        justify-content: space-around;
     }
 
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    footer .bottom img {
+        display: none;
     }
     /* 푸터 */
+
+    footer select {
+        margin-right: 9px;
+    }
 }
 /* 모바일 */
 
@@ -667,12 +678,19 @@ input[id="menuicon"]:checked + label + div {
     
     footer .bottom {
         flex-direction: column;
-        gap: 20px;
+        height: 150px;
+    }
+
+    footer .bottom img {
+        margin-bottom: 10px;
     }
     
     footer .bottom .left {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    footer .bottom .right {
+        margin-bottom: 12px;
     }
     /* 푸터 */
 

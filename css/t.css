@@ -27,11 +27,21 @@ header.active,
 
 header {
     padding-top: 5px;
+    position: absolute;
+}
+
+header:hover {
+    background: transparent;
+}
+
+header:hover .logo {
+    background: url(../img/메인로고.png);
 }
 
 .toggle {
     display: block;
 }
+
 /* 헤더 */
 
 .main .text {
@@ -165,11 +175,18 @@ footer .top .left {
 
 footer .bottom {
     flex-direction: column;
-    gap: 20px;
+    height: 150px;
+}
+
+footer .bottom img {
+    margin-bottom: 10px;
 }
 
 footer .bottom .left {
     flex-direction: column;
-    gap: 20px;
+}
+
+footer .bottom .right {
+    margin-bottom: 12px;
 }
 /* 푸터 */
