@@ -116,7 +116,7 @@ header:hover input {
 header:hover input::placeholder {
     color: rgb(0, 0, 0, 0.4);
 }
-
+/* 헤더호버 */
 
 header.active {
     background: rgba(255, 255, 255);
@@ -151,6 +151,10 @@ header.active .logo {
 
 .active input {
     color: #000;
+}
+
+.active .menu li a:hover {
+    color: #009FE3;
 }
 /* 헤더고정 */
 
@@ -187,7 +191,7 @@ header .left,
 }
 
 .menu li a:hover {
-    color: #066aff;
+    color: #009FE3;
 }
 
 header .left {

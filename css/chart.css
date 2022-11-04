@@ -35,6 +35,7 @@ html::-webkit-scrollbar-thumb {
 body {
     min-width: 1380px;
     display: block;
+    overflow-x: hidden;
 }
 
 section {
@@ -574,6 +575,7 @@ input[id="menuicon"]:checked + label + div {
         font-size: 14px;
     }
     
+    
     body {
         min-width: auto;
     }
@@ -611,6 +613,7 @@ input[id="menuicon"]:checked + label + div {
         display: block;
     }
     /* 헤더 */
+    
 
     .sec1 {
         height: auto;
