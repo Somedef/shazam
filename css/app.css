@@ -23,11 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-    border: 1px solid #ddd;
-}
-
 html::-webkit-scrollbar {
     width: 12px;
 }

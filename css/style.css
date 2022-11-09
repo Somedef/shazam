@@ -57,7 +57,6 @@
 
 html {
     scroll-behavior: smooth;
-    border: 1px solid #ddd;
 }
 
 html::-webkit-scrollbar {
@@ -205,7 +204,7 @@ header .inner .left img {
     font-size: 1.125rem;
     margin-right: 50px;
     color: white;
-    transition: .3s;
+    transition: .2s;
     font-weight: 700;
 }
 
@@ -238,7 +237,7 @@ input:focus {
 }
 
 input::placeholder {
-    color: rgb(0, 0, 0, 0.4);
+    color: transparent;
 }
 /* 헤더 */
 
@@ -330,8 +329,13 @@ input::placeholder {
     font-weight: 700;
     gap: 10px;
     color: #066aff;
-    box-shadow: 0 0 8px rgb(0, 0, 0, .2);
+    box-shadow: 0 0 7px rgb(0, 0, 0, .2);
     backdrop-filter: blur(10px);
+    border: 1px solid transparent;
+}
+
+.chrome a:hover {
+    border: 1px solid rgb(255, 0, 0, .2);
 }
 
 .chrome a i {
@@ -486,6 +490,10 @@ input::placeholder {
     font-size: 1rem;
     color: #000;
     letter-spacing: -0.5px;
+}
+
+.sng a:last-child {
+    font-weight: 700;
 }
 
 .sng a:hover,
@@ -968,7 +976,7 @@ input[id="menuicon"]:checked + label + div {
 .shazam span {
     margin-bottom: 2px; 
     font-size: 0.875rem;
-    color: rgb(0, 0, 0, .65);
+    color: rgb(0, 0, 0, .55);
 }
 
 .play {

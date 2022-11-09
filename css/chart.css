@@ -17,22 +17,16 @@ html {
     scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-    border: 1px solid #ddd;
-}
-
 html::-webkit-scrollbar {
-    width: 12px;
+    background: #000;
+    width: 15px;
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 42%, 0.8);
-    border-radius: 100px;
-}
-
-html::-webkit-scrollbar-track {
-    background: #000;
+    background: rgb(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
 }
 
 body {
@@ -251,6 +245,8 @@ input::placeholder {
     padding: 15px 0 10px 0;
     cursor: pointer;
     transition: 0.3s;
+    background: #000;
+    cursor: default;
 }
 
 .media:hover,
@@ -261,7 +257,18 @@ input::placeholder {
 
 .media:hover span,
 .media2:hover span {
+    display: none;
+}
+
+.media:hover .more,
+.media2:hover .more {
     display: block;
+}
+
+.more {
+    display: none;
+    margin-right: 17px;
+    cursor: pointer;
 }
 
 .media2 p {
@@ -303,10 +310,15 @@ input::placeholder {
     margin-right: 25px;
 }
 
+.media a img,
+.media2 a img {
+    width: 68px;
+    height: 68px;
+}
+
 .media span, .media2 span {
-    margin-right: 10px;
+    margin-right: 15px;
     color: rgb(255, 255, 255, 0.7);
-    display: none;
 }
 
 .sng a:nth-child(2) {
@@ -719,4 +731,3 @@ input[id="menuicon"]:checked + label + div {
     }
 }
 /* 태블릿까지 */
-
