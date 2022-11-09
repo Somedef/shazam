@@ -112,6 +112,7 @@ input {
     border: none;
     font-size: 14px;
     color: black;
+    cursor: default;
 }
 
 input:focus {
@@ -402,7 +403,7 @@ footer select::-webkit-scrollbar-thumb {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px 0;
     width: 310px;
     margin-bottom: 25px;
@@ -417,7 +418,12 @@ footer select::-webkit-scrollbar-thumb {
 
 .login-form > a i,
 .login-form > a img {
-    margin-right: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.login-form a p {
+    margin-left: 15px;
 }
 
 .login-form > a img {
