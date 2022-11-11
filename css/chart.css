@@ -140,9 +140,14 @@ input::placeholder {
     align-items: flex-end;
 }
 
-.sec1 .left img {
+.sec1 .top .left img {
     border-radius: 8px;
     margin-right: 50px;
+}
+
+.sec1 .bottom .left img {
+    border-radius: 10px;
+    border: 0.5px solid white;
 }
 
 .sec1 .info {
@@ -224,6 +229,7 @@ input::placeholder {
 .sec1 .bottom {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: 50px;
     border-top: 0.5px solid rgb(255, 255, 255, 0.4);
     padding-top: 50px;
@@ -314,6 +320,7 @@ input::placeholder {
 .media2 a img {
     width: 68px;
     height: 68px;
+    border-radius: 8px;
 }
 
 .media span, .media2 span {
