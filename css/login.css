@@ -120,6 +120,11 @@ input:focus {
 }
 
 input::placeholder {
+    color: transparent;
+    transition: .3s;
+}
+
+.searcharea:hover input::placeholder {
     color: rgb(0, 0, 0, .5);
 }
 

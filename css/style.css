@@ -111,7 +111,7 @@ header:hover input {
     color: #000;
 }
 
-header:hover input::placeholder {
+.searcharea:hover input::placeholder {
     color: rgb(0, 0, 0, 0.4);
 }
 /* 헤더호버 */
@@ -238,6 +238,7 @@ input:focus {
 
 input::placeholder {
     color: transparent;
+    transition: .3s;
 }
 /* 헤더 */
 
@@ -1010,4 +1011,62 @@ input[id="menuicon"]:checked + label + div {
     height: 30px;
     width: 100px;
     font-weight: 800;
+}
+
+.layer {
+    width: 450px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    display: none;
+    border-radius: 8px;
+    z-index: 1000;
+    padding-top: 40px;
+    box-shadow: 0 0 8px rgb(255,255,255,.6);
+}
+
+.layer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.layer-bg {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    display: none;
+}
+
+.layer img {
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, .7);
+}
+
+.layer span {
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+    color:rgb(0, 0, 0, .6)
+}
+
+.link {
+    font-weight: 500;
+    font-size: 0.925rem;
+}
+
+.link a {
+    color: #066aff;
+}
+
+.link a:hover {
+    text-decoration: underline;
 }

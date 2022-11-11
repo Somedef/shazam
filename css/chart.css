@@ -121,8 +121,14 @@ input:focus {
     outline: none;
 }
 
+
 input::placeholder {
-    color: rgb(255, 255, 255, 0.4);
+    color: transparent;
+    transition: .3s;
+}
+
+.searcharea:hover input::placeholder {
+    color: rgb(255, 255, 255, .4);
 }
 /* 헤더 */
 
@@ -738,3 +744,21 @@ input[id="menuicon"]:checked + label + div {
     }
 }
 /* 태블릿까지 */
+
+.play {
+    position: relative;
+}
+
+.play img:last-child {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 18%;
+    top: 22%;
+    display: none;
+}
+
+.media:hover .play img:last-child,
+.media2:hover .play img:last-child {
+    display: block;
+}

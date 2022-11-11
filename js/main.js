@@ -22,9 +22,45 @@ $(window).on('scroll', function () {
 });
 // 헤더
 
+$(".pop").click(function(){
+    $(".layer").fadeIn(250);
+})
+
+$(".pop").click(function(){
+    $(".layer-bg").fadeIn(250);
+})
+// 앱다운로드 클릭시 fadeIn
+
+$(".layer-bg").click(function(){
+    $(".layer").fadeOut(200);
+})
+
+$(".layer-bg").click(function(){
+    $(".layer-bg").fadeOut(200);
+})
+// 배경 클릭시 fadeOut
+
+$(".layer").click(function(){
+    $(".layer").fadeOut(200);
+})
+
+$(".layer").click(function(){
+    $(".layer-bg").fadeOut(200);
+})
+// 팝업 클릭시 fadeOut
+// 클릭
 
 
 
+$(window).scroll(function(){
+    $(".layer").hide(400);
+})
+
+$(window).scroll(function(){
+    $(".layer-bg").hide();
+})
+// 스크롤하이드
+// 앱다운로드 팝업
 
 
 
