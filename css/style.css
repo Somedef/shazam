@@ -652,8 +652,40 @@ input::placeholder {
 /* 문의 */
 
 footer {
-    height: 330px;
+    height: 360px;
     background: #000;
+    position: relative;
+}
+
+.label {
+    background: rgb(255, 255, 255, .9);
+    text-align: center;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label a {
+    color: #066aff;
+}
+
+#xmark {
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+    cursor: pointer;
+}
+
+.label a:hover {
+    text-decoration: underline;
+}
+
+footer .inner {
+    padding-top: 30px;
 }
 
 select {

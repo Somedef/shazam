@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="assets/favicon.ico">
     <title>Login</title>
 </head>
+
 <body>
     <header>
         <div class="inner">
@@ -69,17 +71,22 @@
                 <label for="pw">비밀번호</label>
             </div>
             <div class="btn-area">
-                <button type="submit" id="btn" 
-                onclick="alert('이 페이지는 학생포트폴리오로 작업되었으며 실제 서비스와 연동 되지 않습니다.')">로그인</button>
+                <button type="submit" id="btn"
+                    onclick="alert('이 페이지는 학생포트폴리오로 작업되었으며 실제 서비스와 연동 되지 않습니다.')">로그인</button>
             </div>
             <div class="caption">
-                <a href="">암호를 잊으셨습니까?</a>
-                <a href="">계정이 없으신가요?<span>Shazam 앱으로 가입하기</span></a>
+                <a href="#">암호를 잊으셨습니까?</a>
+                <a href="#">계정이 없으신가요?<span>Shazam 앱으로 가입하기</span></a>
             </div>
         </form>
     </section>
 
     <footer>
+        <div class="label">
+            <p>샤잠은 쿠키를 사용합니다. 당사의 <a href="https://www.apple.com/legal/privacy/" target="_blank"> Apple 개인정보</a> 보호정책
+            </p>
+            <i class="fa-solid fa-circle-xmark" id="xmark"></i>
+        </div>
         <div class="inner">
             <div class="top">
                 <div class="left">
@@ -107,8 +114,10 @@
                         <option>繁體中文</option>
                     </select>
                     <div class="dwn">
-                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459" target="_blank"><img src="img/벡터/apple.svg" alt=""></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><img src="img/벡터/구글.svg" alt=""></a>
+                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459"
+                            target="_blank"><img src="img/벡터/apple.svg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><img
+                                src="img/벡터/구글.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="right">
@@ -134,10 +143,14 @@
                     <span>© Copyright 2022 Apple Inc. 및 자회사 | 공급업체의 의무</span>
                 </div>
                 <div class="right">
-                    <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i class="fa-brands fa-square-snapchat fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"
+                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl"
+                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"
+                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i
+                            class="fa-brands fa-square-snapchat fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
                 </div>
             </div>
         </div>
@@ -150,21 +163,33 @@
         let = $('#pw');
         let = $('#btn');
 
-        $(btn).on('click', function(){
-            if($(id).val() =="") {
+        $(btn).on('click', function () {
+            if ($(id).val() == "") {
                 $(id).next('label').addClass('warning');
-                setTimeout(function(){
+                setTimeout(function () {
                     $('label').removeClass('warning');
-                },1500);
+                }, 1500);
             }
-            else if($(pw).val() =="") {
+            else if ($(pw).val() == "") {
                 $(pw).next('label').addClass('warning');
-                setTimeout(function(){
+                setTimeout(function () {
                     $('label').removeClass('warning');
-                },1500);
+                }, 1500);
             }
-        })
+        });
+        // 로그인폼
+
+        $("#xmark").click(function () {
+            $(".label").fadeOut(200);
+        });
+        // 쿠키
+
+        $(document).on('click', 'a[href="#"]', function (e) {
+            e.preventDefault();
+        });
+// 탑이동방지
     </script>
 
 </body>
+
 </html>

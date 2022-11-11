@@ -208,10 +208,10 @@ h1 {
     align-items: flex-start;
     gap: 30px;
     margin-top: 50px;
-    /* outline: 1px solid black; */
     background: #fff;
     padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, .2);
 }
 
 .qr p {
@@ -230,15 +230,41 @@ h1 {
 /* 슬라이드 */
 
 footer {
-    height: 300px;
+    height: 360px;
     background: #000;
+    position: relative;
+}
+
+.label {
+    background: rgb(255, 255, 255, .9);
+    text-align: center;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label a {
+    color: #066aff;
+}
+
+#xmark {
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+    cursor: pointer;
+}
+
+.label a:hover {
+    text-decoration: underline;
 }
 
 footer .inner {
-    border-top: 0.5px solid rgb(255, 255, 255, 0.4);
+    padding-top: 30px;
 }
-
-
 
 select {
     width: 180px;
@@ -268,10 +294,6 @@ select:hover {
     border: 2px solid rgb(255, 255, 255, 0.85);
     color: #fff;
     background: rgb(255, 255, 255, 0.1);
-}
-
-footer {
-    height: 330px;
 }
 
 footer .top {

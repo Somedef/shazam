@@ -62,6 +62,15 @@ $(window).scroll(function(){
 // 스크롤하이드
 // 앱다운로드 팝업
 
+$("#xmark").click(function(){
+    $(".label").fadeOut(200);
+})
+// 쿠키
+
+$(document).on('click','a[href="#"]',function(e){
+    e.preventDefault();
+});
+// 탑이동방지
 
 
 

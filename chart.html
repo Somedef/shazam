@@ -372,6 +372,11 @@
     </section>
 
     <footer>
+        <div class="label">
+            <p>샤잠은 쿠키를 사용합니다. 당사의 <a href="https://www.apple.com/legal/privacy/" target="_blank"> Apple 개인정보</a> 보호정책
+            </p>
+            <i class="fa-solid fa-circle-xmark" id="xmark"></i>
+        </div>
         <div class="inner">
             <div class="top">
                 <div class="left">
@@ -399,8 +404,10 @@
                         <option>繁體中文</option>
                     </select>
                     <div class="dwn">
-                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459" target="_blank"><img src="img/벡터/apple.svg" alt=""></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><img src="img/벡터/구글.svg" alt=""></a>
+                        <a href="https://apps.apple.com/kr/app/shazam-%EB%85%B8%EB%9E%98%EC%B0%BE%EA%B8%B0%EC%96%B4%ED%94%8C/id284993459"
+                            target="_blank"><img src="img/벡터/apple.svg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank"><img
+                                src="img/벡터/구글.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="right">
@@ -408,7 +415,7 @@
                         <li>법적고지</li>
                         <li><a href="#">개인정보 보호</a></li>
                         <li><a href="#">데이터 관리</a></li>
-                        <li><a href="">이용약관</a></li>
+                        <li><a href="#">이용약관</a></li>
                     </ul>
                     <ul class="second">
                         <li>회사 리소스</li>
@@ -426,11 +433,14 @@
                     <span>© Copyright 2022 Apple Inc. 및 자회사 | 공급업체의 의무</span>
                 </div>
                 <div class="right">
-                    <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
-                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i class="fa-brands fa-square-snapchat fa-2xl"
+                    <a href="https://ko-kr.facebook.com/Shazam/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"
                             style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://twitter.com/shazam" target="_blank"><i class="fa-brands fa-twitter fa-2xl"
+                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.instagram.com/shazam/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"
+                            style="color:rgb(255, 255, 255, 0.6)"></i></a>
+                    <a href="https://www.snapchat.com/add/shazam" target="_blank"><i
+                            class="fa-brands fa-square-snapchat fa-2xl" style="color:rgb(255, 255, 255, 0.6)"></i></a>
                 </div>
             </div>
         </div>
@@ -440,7 +450,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-         var swiper = new Swiper(".swiper-container", {
+        var swiper = new Swiper(".swiper-container", {
             watchSlidesProgress: true,
             slidesPerView: 2,
             spaceBetween: 5,
@@ -449,7 +459,7 @@
                 clickable: true,
             },
             breakpoints: {
-                
+
                 480: {
                     slidesPerView: 2,
                 },
@@ -463,7 +473,18 @@
                     slidesPerView: 5,
                 }
             }
-      });
+        });
+        //   장르슬라이드
+
+        $("#xmark").click(function () {
+            $(".label").fadeOut(200);
+        });
+        // 쿠키
+
+        $(document).on('click', 'a[href="#"]', function (e) {
+            e.preventDefault();
+        });
+// 탑이동방지
     </script>
     <!-- 스크립트 -->
 </body>
