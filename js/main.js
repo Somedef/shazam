@@ -72,6 +72,13 @@ $(document).on('click','a[href="#"]',function(e){
 });
 // 탑이동방지
 
+$(window).on('load', function() {
+    setTimeout(function(){
+        $("#waiting").fadeOut();
+    }, 500);
+});
+// 로딩
+
 
 
 

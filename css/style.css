@@ -1102,3 +1102,22 @@ input[id="menuicon"]:checked + label + div {
 .link a:hover {
     text-decoration: underline;
 }
+
+
+#waiting {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1001;
+    opacity: 0.9;
+}
+#waiting > img {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 50%;
+}
