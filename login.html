@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="assets/favicon.ico">
     <title>Login</title>
 </head>
 
 <body>
+    <div id="waiting">
+        <img src="img/wating.gif" alt="">
+    </div>
     <header>
         <div class="inner">
             <div class="left">
@@ -71,8 +70,7 @@
                 <label for="pw">비밀번호</label>
             </div>
             <div class="btn-area">
-                <button type="submit" id="btn"
-                    onclick="alert('이 페이지는 학생포트폴리오로 작업되었으며 실제 서비스와 연동 되지 않습니다.')">로그인</button>
+                <button type="submit" id="btn">로그인</button>
             </div>
             <div class="caption">
                 <a href="#">암호를 잊으셨습니까?</a>
@@ -157,39 +155,18 @@
     </footer>
     <!-- 푸터 -->
 
+    <div class="layer-bg"></div>
+    <div class="layer">
+        <div class="layer-inner">
+            <p>해당 페이지는 학생 포트폴리오로 작업되었으며<br>
+                <span>로그인</span> 및 <span>실제 서비스와</span> 연동되지 않습니다.</p>
+                <i class="fa-solid fa-circle-xmark fa-xl" id="close"></i>
+        </div>
+    </div>
+    <!-- 미리알림 -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-        let = $('#id');
-        let = $('#pw');
-        let = $('#btn');
-
-        $(btn).on('click', function () {
-            if ($(id).val() == "") {
-                $(id).next('label').addClass('warning');
-                setTimeout(function () {
-                    $('label').removeClass('warning');
-                }, 1500);
-            }
-            else if ($(pw).val() == "") {
-                $(pw).next('label').addClass('warning');
-                setTimeout(function () {
-                    $('label').removeClass('warning');
-                }, 1500);
-            }
-        });
-        // 로그인폼
-
-        $("#xmark").click(function () {
-            $(".label").fadeOut(200);
-        });
-        // 쿠키
-
-        $(document).on('click', 'a[href="#"]', function (e) {
-            e.preventDefault();
-        });
-// 탑이동방지
-    </script>
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>

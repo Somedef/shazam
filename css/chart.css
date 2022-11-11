@@ -787,3 +787,21 @@ input[id="menuicon"]:checked + label + div {
 .media2:hover .play img:last-child {
     display: block;
 }
+
+#waiting {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1001;
+    background: #000;
+}
+#waiting > img {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 50%;
+}

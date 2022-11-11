@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/chart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="assets/favicon.ico">
     <title>차트</title>
 </head>
 
 <body>
+    <div id="waiting">
+        <img src="img/wating.gif" alt="">
+    </div>
     <header>
         <div class="inner">
             <div class="left">
@@ -484,7 +483,14 @@
         $(document).on('click', 'a[href="#"]', function (e) {
             e.preventDefault();
         });
-// 탑이동방지
+        // 탑이동방지
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $("#waiting").fadeOut();
+            }, 500);
+        });
+    // 로딩
     </script>
     <!-- 스크립트 -->
 </body>

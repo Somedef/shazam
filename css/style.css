@@ -1112,7 +1112,7 @@ input[id="menuicon"]:checked + label + div {
     position: fixed;
     display: flex;
     z-index: 1001;
-    opacity: 0.9;
+    background: #000;
 }
 #waiting > img {
     display: flex;
