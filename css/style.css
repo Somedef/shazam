@@ -1045,14 +1045,14 @@ input[id="menuicon"]:checked + label + div {
     font-weight: 800;
 }
 
-.layer {
+.modalbox {
     width: 450px;
     height: 350px;
     background: #fff;
     position: absolute;
     left: 50%;
     top: 40%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-40%);
     display: none;
     border-radius: 8px;
     z-index: 1000;
@@ -1060,30 +1060,30 @@ input[id="menuicon"]:checked + label + div {
     box-shadow: 0 0 8px rgb(255,255,255,.6);
 }
 
-.layer-inner {
+.modal-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.layer-bg {
+.modal {
     width: 100%;
     height: 100%;
     background: rgb(0, 0, 0, .6);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 500;
     display: none;
 }
 
-.layer img {
+.modal img {
     border-radius: 8px;
     box-shadow: 0 0 8px rgb(0, 0, 0, .7);
 }
 
-.layer span {
+.modal span {
     text-align: center;
     font-weight: 600;
     white-space: nowrap;

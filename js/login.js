@@ -36,26 +36,14 @@ let = $('#id');
         // 로딩
 
         $(window).on('load',function(){
-            $(".layer").fadeIn();
+            $(".modal").fadeIn();
         })
 
-        $(window).on('load',function(){
-            $(".layer-bg").fadeIn();
-        })
-
-        $(".layer-bg").click(function(){
-            $(".layer").fadeOut(150);
-        })
-
-        $(".layer-bg").click(function(){
-            $(".layer-bg").fadeOut(150);
+        $(".modal").click(function(){
+            $(".modal").fadeOut(300);
         })
 
         $("#close").click(function(){
-            $(".layer").fadeOut(150);
-        })
-
-        $("#close").click(function(){
-            $(".layer-bg").fadeOut(150);
+            $(".layer").fadeOut(300);
         })
         // 접속시
