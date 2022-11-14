@@ -243,9 +243,6 @@ input::placeholder {
 /* 헤더 */
 
 .main {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     position: relative;
     background: transparent;
 }
@@ -301,9 +298,8 @@ input::placeholder {
 /* 메인 */
 
 .chrome {
-    height: 600px;
     background: transparent;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .chrome .inner {
@@ -380,8 +376,7 @@ input::placeholder {
 /* 익스텐션 */
 
 .gbl {
-    height: 1235px;
-    padding-top: 135PX;
+    padding: 150px 0;
     background: #fff;
     box-shadow: 0 2px 8px rgb(0, 0, 0, .15);
 }
@@ -508,8 +503,7 @@ input::placeholder {
 /* 글로벌200차트 */
 
 .slide {
-    height: 800px;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .slide h2 {
@@ -571,8 +565,7 @@ input::placeholder {
 /* 슬라이드 */
 
 .city {
-    height: 1405px;
-    padding-top: 105px;
+    padding: 100px 0;
     background: #fff;
     box-shadow: 0 -2px 8px rgb(0, 0, 0, .15);
 }
@@ -620,12 +613,11 @@ input::placeholder {
 
 .inquire {
     overflow-x: hidden;
-    height: 400px;
     background: #f8f8f8;
     background-image: url(../img/그린블루합체.png);
     background-repeat: no-repeat;
     background-position: right;
-    padding-top: 142px;
+    padding: 140px 0;
 }
 
 .inquire .inner {
@@ -652,9 +644,9 @@ input::placeholder {
 /* 문의 */
 
 footer {
-    height: 360px;
     background: #000;
     position: relative;
+    padding-bottom: 25px;
 }
 
 .label {
@@ -903,6 +895,7 @@ input[id="menuicon"]:checked + label + div {
     position: absolute;
     bottom: 3%;
     left: 49.3%;
+    transform: translate(-3%,-49.3%);
     width: 30px;
     height: 47px;
     border: solid rgb(255, 255, 255, .5) 2px;
