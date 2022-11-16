@@ -1107,10 +1107,32 @@ input[id="menuicon"]:checked + label + div {
     z-index: 1001;
     background: #000;
 }
+
 #waiting > img {
     display: flex;
     width: fit-content;
     height: fit-content;
     margin: auto;
     border-radius: 50%;
+}
+
+.modal1 {
+    outline: 1px solid black;
+    width: 300px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    position: absolute;
+    left: 395px;
+    z-index: 2000;
+    display: none;
+}
+
+.o {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    margin-left: 20px;
 }
