@@ -44,6 +44,7 @@ section {
     width: 1300px;
     margin: 0 auto;
 }
+
 /* 세팅 */
 
 header {
@@ -130,6 +131,7 @@ input::placeholder {
 .searcharea:hover input::placeholder {
     color: rgb(255, 255, 255, .4);
 }
+
 /* 헤더 */
 
 .sec1 {
@@ -226,6 +228,9 @@ input::placeholder {
     letter-spacing: 1px;
     transition: 0.2s;
     border: none;
+
+
+
 }
 
 .sec1 .top button:hover {
@@ -288,7 +293,8 @@ input::placeholder {
     color: #fff;
 }
 
-.media p, .media2 p {
+.media p,
+.media2 p {
     padding-left: 10px;
 }
 
@@ -299,7 +305,8 @@ input::placeholder {
     color: #fff;
 }
 
-.media .list, .media2 .list {
+.media .list,
+.media2 .list {
     width: 500px;
     display: flex;
     flex-direction: row;
@@ -329,7 +336,8 @@ input::placeholder {
     border-radius: 8px;
 }
 
-.media span, .media2 span {
+.media span,
+.media2 span {
     margin-right: 15px;
     color: rgb(255, 255, 255, 0.7);
 }
@@ -364,6 +372,7 @@ input::placeholder {
     width: 600px;
     height: 700px;
 }
+
 /* sec1 */
 
 
@@ -506,26 +515,72 @@ footer select::-webkit-scrollbar {
     width: 10px;
 }
 
-footer select::-webkit-scrollbar-thumb
- {
+footer select::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255, 0.4);
     background-clip: padding-box;
     border-radius: 10px;
     border: 2px solid transparent;
 }
+
 /* 푸터 */
 
-#menuicon {display: none;}
-#menuicon + label {display: block; margin: 30px; width: 30px; height: 25px; position: relative; cursor: pointer;}  
-#menuicon + label span {display: block; position: absolute; width: 100%; height: 5px; border-radius: 30px; background: rgb(255, 255, 255, .8); transition: all .35s;}
-#menuicon + label span:nth-child(1) {top: 0;}    
-#menuicon + label span:nth-child(2) {top: 50%; transform: translateY(-50%);}
-#menuicon + label span:nth-child(3) {bottom: 0;}
-#menuicon:checked + label {z-index: 2;}
-#menuicon:checked + label span {background: rgb(255, 255, 255, .8);}
-#menuicon:checked + label span:nth-child(1) {top: 50%; transform: translateY(-50%) rotate(45deg);}
-#menuicon:checked + label span:nth-child(2) {opacity: 0;}
-#menuicon:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+#menuicon {
+    display: none;
+}
+
+#menuicon+label {
+    display: block;
+    margin: 30px;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+#menuicon+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255, .8);
+    transition: all .35s;
+}
+
+#menuicon+label span:nth-child(1) {
+    top: 0;
+}
+
+#menuicon+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#menuicon+label span:nth-child(3) {
+    bottom: 0;
+}
+
+#menuicon:checked+label {
+    z-index: 2;
+}
+
+#menuicon:checked+label span {
+    background: rgb(255, 255, 255, .8);
+}
+
+#menuicon:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#menuicon:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuicon:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
 
 .sidebar {
     width: 300px;
@@ -538,7 +593,7 @@ footer select::-webkit-scrollbar-thumb
     transition: all .35s;
 }
 
-input[id="menuicon"]:checked + label + div {
+input[id="menuicon"]:checked+label+div {
     right: 0;
 }
 
@@ -561,6 +616,7 @@ input[id="menuicon"]:checked + label + div {
     position: relative;
     right: -30%;
 }
+
 /* 토글 */
 
 
@@ -573,6 +629,7 @@ input[id="menuicon"]:checked + label + div {
 .swiper-wrapper {
     display: flex;
 }
+
 /* 장르 버튼 슬라이드 */
 
 @media all and (max-width:500px) {
@@ -592,11 +649,12 @@ input[id="menuicon"]:checked + label + div {
         width: 100%;
         padding: 0 30px;
     }
+
     /* 세팅 */
 
     .dwn {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     footer {
@@ -629,12 +687,14 @@ input[id="menuicon"]:checked + label + div {
     footer .bottom img {
         display: none;
     }
+
     /* 푸터 */
 
     footer select {
         margin-right: 9px;
     }
 }
+
 /* 모바일 */
 
 
@@ -643,8 +703,8 @@ input[id="menuicon"]:checked + label + div {
     html {
         font-size: 14px;
     }
-    
-    
+
+
     body {
         min-width: auto;
     }
@@ -671,6 +731,7 @@ input[id="menuicon"]:checked + label + div {
     .sec1 .bottom .left {
         display: none;
     }
+
     /* 세팅 */
 
 
@@ -681,18 +742,19 @@ input[id="menuicon"]:checked + label + div {
     .toggle {
         display: block;
     }
+
     /* 헤더 */
-    
+
 
     .sec1 {
         height: auto;
         padding-bottom: 80px;
-    } 
+    }
 
     .sec1 .top {
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         gap: 20px;
     }
 
@@ -714,6 +776,7 @@ input[id="menuicon"]:checked + label + div {
         width: 80px;
         height: 40px;
     }
+
     /* sec1 */
 
     footer {
@@ -724,7 +787,7 @@ input[id="menuicon"]:checked + label + div {
     footer .inner {
         padding-top: 50px;
     }
-    
+
     footer .top {
         flex-direction: column;
         align-items: center;
@@ -733,7 +796,7 @@ input[id="menuicon"]:checked + label + div {
     footer .top .left {
         align-items: center;
     }
-    
+
     footer .bottom {
         flex-direction: column;
         height: 150px;
@@ -742,7 +805,7 @@ input[id="menuicon"]:checked + label + div {
     footer .bottom img {
         margin-bottom: 10px;
     }
-    
+
     footer .bottom .left {
         flex-direction: column;
     }
@@ -750,9 +813,11 @@ input[id="menuicon"]:checked + label + div {
     footer .bottom .right {
         margin-bottom: 12px;
     }
+
     /* 푸터 */
 
 }
+
 /* 태블릿 */
 
 @media all and (min-width: 957px) and (max-width: 1379px) {
@@ -769,6 +834,7 @@ input[id="menuicon"]:checked + label + div {
         width: 90%;
     }
 }
+
 /* 태블릿까지 */
 
 .play {
@@ -799,7 +865,8 @@ input[id="menuicon"]:checked + label + div {
     z-index: 1001;
     background: #000;
 }
-#waiting > img {
+
+#waiting>img {
     display: flex;
     width: auto;
     height: auto;
