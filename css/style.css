@@ -687,7 +687,8 @@ select {
     border: 2px solid rgb(255, 255, 255, 0.6);
     font-size: 0.875rem;
     font-weight: 700;
-    background: transparent;
+    background: transparent url(../img/icons8-expand-arrow-24.png) no-repeat calc(100% - 10px);
+    background-size: 18px 18px;
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
@@ -706,7 +707,7 @@ select:focus {
 select:hover {
     border: 2px solid rgb(255, 255, 255, 0.85);
     color: #fff;
-    background: rgb(255, 255, 255, 0.1);
+    /* background: rgb(255, 255, 255, 0.1); */
 }
 
 footer .top {
@@ -894,8 +895,8 @@ input[id="menuicon"]:checked + label + div {
 .scroll {
     position: absolute;
     bottom: 3%;
-    left: 49.3%;
-    transform: translate(-3%,-49.3%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 30px;
     height: 47px;
     border: solid rgb(255, 255, 255, .5) 2px;
@@ -1110,8 +1111,8 @@ input[id="menuicon"]:checked + label + div {
 
 #waiting > img {
     display: flex;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     margin: auto;
     border-radius: 50%;
 }

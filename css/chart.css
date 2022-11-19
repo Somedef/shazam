@@ -171,7 +171,7 @@ input::placeholder {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 700;
-    background: rgb(255, 255, 255, 0.15);
+    background: rgb(255, 255, 255, .1) url(../img/icons8-expand-arrow-24.png) no-repeat calc(100% - 10px);
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
@@ -211,7 +211,7 @@ input::placeholder {
 
 .sec1 select:hover {
     border: none;
-    background: rgb(255, 255, 255, 0.2);
+    /* background: rgb(255, 255, 255, 0.2); */
 }
 
 .sec1 .top button {
@@ -412,7 +412,8 @@ select {
     border: 2px solid rgb(255, 255, 255, 0.6);
     font-size: 0.875rem;
     font-weight: 700;
-    background: transparent;
+    background: transparent url(../img/icons8-expand-arrow-24.png) no-repeat calc(100% - 10px);
+    background-size: 18px 18px;
     color: rgb(255, 255, 255, 0.8);
     padding: 0 10px;
     transition: 0.3s;
@@ -432,7 +433,7 @@ select:focus {
 select:hover {
     border: 2px solid rgb(255, 255, 255, 0.85);
     color: #fff;
-    background: rgb(255, 255, 255, 0.1);
+    /* background: rgb(255, 255, 255, 0.1); */
 }
 
 footer .top {
@@ -800,8 +801,8 @@ input[id="menuicon"]:checked + label + div {
 }
 #waiting > img {
     display: flex;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     margin: auto;
     border-radius: 50%;
 }
